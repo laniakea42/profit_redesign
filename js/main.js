@@ -42,6 +42,31 @@ function sliders() {
         arrows: true,
     });
 
+    $('.exp_slider').slick({
+        // autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+    });
+
+    $('.exp_slider--mobile').slick({
+        // autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+    });
+
+    $('.trainz_slider').slick({
+        autoplay: true,
+        slidesToShow:4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+    });
+
+
     $('.three_slider').slick({
         autoplay: true,
         slidesToShow: 3,
@@ -88,6 +113,38 @@ function sliders() {
         ]
     });
 
+    
+    $('.diploms_slider').slick({
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1230,
+                settings: {
+                    slidesToShow: 3,
+                    // arrows: false
+                }
+            },
+            {
+                breakpoint: 830,
+                settings: {
+                    slidesToShow: 2,
+                    // arrows: false
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 1,
+                    // arrows: false
+                }
+            }
+        ]
+    });
+
     $('.vid_slider').slick({
         // autoplay: true,
         slidesToShow: 4,
@@ -124,6 +181,7 @@ function sliders() {
         slidesToScroll: 1,
         dots: true,
         arrows: true,
+        fade: true,
         responsive: [
             {
                 breakpoint: 430,
