@@ -34,12 +34,54 @@ function sliders() {
         ]
     });
 
+    $('.raspis_slider').slick({
+        // autoplay: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+    });
+
     $('.mainsl').slick({
         autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
         arrows: true,
+    });
+
+
+
+    $('.nakogo_slider').slick({
+        autoplay: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    $('.forwho_slider').slick({
+        autoplay: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 
     $('.exp_slider').slick({
@@ -64,10 +106,91 @@ function sliders() {
         slidesToScroll: 1,
         dots: true,
         arrows: true,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 805,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 2,
+                    // arrows: false
+                }
+            }
+        ]
     });
 
 
     $('.three_slider').slick({
+        autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 750,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+
+    });
+
+    $('.tarifs_slider ').slick({
+        autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 805,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 1,
+                    // arrows: false
+                }
+            }
+        ]
+
+    });
+
+    $('.smc_slider').slick({
         autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -136,7 +259,7 @@ function sliders() {
                 }
             },
             {
-                breakpoint: 430,
+                breakpoint: 530,
                 settings: {
                     slidesToShow: 1,
                     // arrows: false
@@ -146,7 +269,7 @@ function sliders() {
     });
 
     $('.vid_slider').slick({
-        // autoplay: true,
+        autoplay: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: true,
@@ -165,7 +288,7 @@ function sliders() {
                 }
             },
             {
-                breakpoint: 520,
+                breakpoint: 620,
                 settings: {
                     slidesToShow: 1
                 }
@@ -174,6 +297,63 @@ function sliders() {
 
     });
 
+    $('.sudentsres_slider').slick({
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1240,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 980,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 620,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+
+    });    
+
+    $('.cases_slider').slick({
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1240,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 980,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 620,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+
+    });    
     
     $('.team_slider').slick({
         autoplay: true,
@@ -230,6 +410,11 @@ function sliders() {
 sliders();
 
 $(function(){
+
+    $('.tab_head').on('click', function() {
+        $(this).next().slideToggle();
+        $(this).toggleClass('active');
+    })
 
     $('.dd_h').on('click', function() {
         $(this).toggleClass('active');

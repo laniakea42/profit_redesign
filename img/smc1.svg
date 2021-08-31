@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="Сгруппировать_4084" data-name="Сгруппировать 4084" transform="translate(-139 -12714)">
+    <g id="i" transform="translate(139 12714)" fill="#fff" stroke="#fff" stroke-width="1">
+      <circle cx="40" cy="40" r="40" stroke="none"/>
+      <circle cx="40" cy="40" r="39.5" fill="none"/>
+    </g>
+    <g id="youtube" transform="translate(155 12736.001)">
+      <path id="Контур_2223" data-name="Контур 2223" d="M209.334,173.209l-11.194-7A1.4,1.4,0,0,0,196,167.4v13.993a1.4,1.4,0,0,0,2.141,1.187l11.194-7a1.4,1.4,0,0,0,0-2.373ZM198.8,178.867v-8.943l7.155,4.472Z" transform="translate(-177.716 -156.205)" fill="#00a859"/>
+      <path id="Контур_2224" data-name="Контур 2224" d="M40.764,61H7a7,7,0,0,0-7,7V90.385a7,7,0,0,0,7,7H40.764a7,7,0,0,0,7-7V68A7,7,0,0,0,40.764,61Zm4.2,29.385a4.2,4.2,0,0,1-4.2,4.2H7a4.2,4.2,0,0,1-4.2-4.2V68A4.2,4.2,0,0,1,7,63.8H40.764a4.2,4.2,0,0,1,4.2,4.2Z" transform="translate(0 -61)" fill="#00a859"/>
+    </g>
+  </g>
+</svg>
